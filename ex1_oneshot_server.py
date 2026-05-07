@@ -6,3 +6,9 @@ import sys
 def error_handling(message):
     sys.stderr.write(message + '\n')
     sys.exit(1)
+    
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
