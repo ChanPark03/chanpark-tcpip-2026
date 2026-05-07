@@ -40,11 +40,21 @@ def main():
     if serv_sock.listen(5) == -1:
         error_handling("listen() error")
         
+    for i in range (2) :   
     #5. accept()
-    try:
-        clnt_sock, clnt_addr = serv_sock.accept()
-    except socket.error:
-        error_handling("accept() error")
+        try:
+            clnt_sock, clnt_addr = serv_sock.accept()
+        except socket.error:
+            error_handling("accept() error")
+        print(f"connected client: {i+1}")
+        while True:
+            message = clnt_sock.recv(1024)
+            if not message :
+                break
+            clnt_sock.send(message)
+        clnt_sock.close()
+        print(f"Client {i+1}")
+    serv_sock.close()
         
     #6. write()
     message = "hello this is server speaking"

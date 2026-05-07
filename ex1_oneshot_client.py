@@ -2,9 +2,7 @@
 
 import socket, sys
 
-def error_handling(message):
-    sys.stderr.write(message + '\n')
-    sys.exit(1)
+
     
 def main():
     if len(sys.argv) != 3:
