@@ -11,10 +11,6 @@ def main():
     
 
   
-    if len(sys.argv) != 2:
-        print(f"Usage: {sys.argv[0]} <port>")
-        sys.exit(1)
-    
     # step 2 주소설정
     serv_ip = '' #172.30.1.8 이렇게 넣어도 되고, 비워두면 addres any
     serv_port = int(sys.argv[1]) # ex 8000 
