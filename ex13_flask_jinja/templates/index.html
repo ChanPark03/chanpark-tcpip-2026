@@ -1,0 +1,14 @@
+{% extends base.html %}
+
+{% block title %} {% endblock %}
+
+{% block content %}
+    <h1> 반갑습니다. {{user.username}}님! </h1>
+    <p> 당신의 등급은 {{user.level}}입니다. </p>
+    <h2> 오늘의 할일 </h2>
+    <ul>
+        {% for item in tasks %}
+        <li>{{ item }}</li>
+        {% endfor %} 
+    </ul>
+{% endblock %}
