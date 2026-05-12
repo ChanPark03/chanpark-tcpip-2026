@@ -3,7 +3,7 @@
     <head>
         <meta charset = "utf-8">
         <title>{% block title %} flask app {% endblock %}</title>
-        <link rel="stylesheet" href="url_for('static', filename='css/style.css')">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
     </head>
     <body>
         <nav>
@@ -12,6 +12,7 @@
         <main>
             {% block content %}{% endblock %}
         </main>
+        <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
 
     </body>
 </html>

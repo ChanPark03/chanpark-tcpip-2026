@@ -13,10 +13,22 @@ from flask import Flask, render_template
 app = Flask(__name__)
 @app.route("/")
 def index():
-    user_info = {"usernane": "iot반", "level": "bootcamp"} # 파이썬: 딕셔너리, 데이터/웹: JSON
+    #일반 변수: 문자열, 정수, 불리언 
+    page_title = 'Flask jinja 문법 학습'
+    classMonth = 3 
+    is_active = True
+    
+    user_info = {"username": "iot반", "level": "bootcamp"} # 파이썬: 딕셔너리, 데이터/웹: JSON
     # 파이썬: 리스트, c/java: 배열, 데이터/웹: JSON
     items = ["Flask 배우기", "Jinja 이해", "예쁜 웹앱 만들기"]
-    return render_template('index.html', user = user_info, tasks = items)
+    return render_template(
+        'index.html',
+        title=page_title,
+        chasu=classMonth,
+        on_class=is_active,
+        user=user_info,
+        tasks=items
+    )
 
 if __name__ == "__main__":
     app.run(host="163.152.213.114", port = 5000)
