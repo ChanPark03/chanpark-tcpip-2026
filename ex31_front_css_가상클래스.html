@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navi a:link, .navi a:visited{
+            text-decoration: none; color: white;
+            background-color: gray; padding: 10px; border-radius: 3px;
+        }
+        .navi a:hover, .navi a:focus{
+            background-color: black;
+            color: white;
+        }
+        .navi a:active{
+            color: red;
+        }
+        .navi ul{list-style: none; display: flex;}
+        .navi ul li{ width: 150px;}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>:link</p>
+        <p>방문하지 않았을때- 파란 밑줄</p>
+        <p>:visited</p>
+        <p>방문 한적이 있을때 - 보라색 밑줄 </p>
+        <p>:hover</p>
+        <p> 마우스를올려두고 아직 클릭 안했을때</p>
+        <p>:active</p>
+        <p> 클릭 했을때 </p>
+        <p>:focus</p>
+        <p>마우스를 올려두거나 TAB키 입력</p>
+    </div>
+    <nav class="navi">
+        <ul>
+            <li><a href="#intro">안내</a></li>
+            <li><a href="#room">객실</a></li>
+            <li><a href="#price">가격</a></li>
+            <li><a href="#reservation">예약</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <div class="contents">
+        <div id="intro">이용안내~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~ ~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~</div>
+        <div id="room">객실소개~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~ ~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~</div>
+        <div id="price">요금~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~ ~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~</div>
+        <div id="reservation">예약~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~ ~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~</div>
+    </div>
+    </body>
+</html>

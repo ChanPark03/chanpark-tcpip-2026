@@ -1,0 +1,33 @@
+body{
+    background-color: aquamarine;
+}
+.login1{
+    background-color: white;
+    border: 1px solid black;
+    width: 400px;
+    margin: 50px auto;
+    padding: 10px;
+}
+.login1 legend{
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.login1 ul li{
+    list-style: none;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+}
+.login1 label{
+    width: 100px;
+    flex-shrink: 0;
+   
+}
+.login1 input{
+    flex-grow: 1;
+    width: 150px;
+}
+.login1 input[required]{
+    border: 1px solid red;
+}

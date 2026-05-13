@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ex30_front_css_basics.css">
+</head>
+<body>
+    <h1>form test</h1>
+    <form>
+        <fieldset>
+            <legend>그룹1</legend>
+            <label>ID<input type="text" name="userid" value="ID를 입력하세요"
+            size="10" maxsize="20">
+            </label>
+            <label>PW
+                <input type="password" name="passwd" value="PW를 입력하세요">
+
+            </label>
+            <input type ="submit" value="제출">
+        </fieldset>
+        <fieldset>
+            <div>Text input: <input type="text"> </div>
+            <div>URL input: <input type="url"> </div>
+            <div>search input: <input type="search"> </div>
+            <div>email:<input type="text"></div>
+            
+            <div><input type="datetime-local"></div>
+            <div><input type="range"></div>
+            <div><input type="color"></div>
+            <div><input type="file"></div>
+            <div><input type="date"></div>
+            <div><input type="month"></div>
+            <div><input type="radio"></div>
+            <div><input type="checkbox"></div>
+            <div><input type="reset"></div>
+            <div><video controls>
+            <div><input type="submit" value="제출"></div>
+        </fieldset>
+        <fieldset>
+            <p> 여러개 선택: checkbox</p>
+            <p>오늘 점심 같이 먹을 사람</p>
+            <label><input type="checkbox" name="lunch_memeber" value="prr" checked>뽀로로</label>
+            <label><input type="checkbox" name="lunch_memeber" value="cr">크롱</label>
+            <label><input type="checkbox" name="lunch_memeber" value="pt">패티</label>
+            <p> 한개 선택: radiobox</p>
+            <p>오늘 점심 메뉴</p>
+
+            <label><input type="radio" name="luch_menu" value="noodle" checked>라면</label>
+            <label><input type="radio" name="luch_menu" value="chicken">치킨</label>
+            <label><input type="radio" name="luch_menu" value="pizza">피자</label>
+            <div><input type="submit" value="제출"></div>
+        </fieldset>
+        <fieldset>
+            <input type="text" name="readonlyInput" value="여기는 읽기 전용" readonly>
+            <input type="text" name="requiredInput" value="여기는 필수 입력" required>
+            <input type="text" name="placeholderInput" placeholder="여기는 이름을 입력합니다">
+            <div><input type="submit" value="제출"></div>
+        </fieldset>
+        <fieldset>
+            <label>ID<input type="email" name="userid" placeholder="email입력"></label>
+            <div><label>PW<input type="password" name="passwd" placeholder="password입력"></label></div>
+            <div><label>phonenumber<input type="tel" name="phonenumber" placeholder="phonenumber입력"><div></div></label>
+            <div><input type="submit" value="제출"></div>
+        </fieldset>
+    </form>
+
+</body>
+</html>

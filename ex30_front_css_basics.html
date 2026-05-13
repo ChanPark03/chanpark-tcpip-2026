@@ -1,0 +1,52 @@
+<!-- ex30 css 를 사용하는 페이지 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ex30_front_css_basics.css">
+    <style>
+        div, p{
+            color: rgb(23, 111, 228);
+        }
+        div p{
+            color: red; 
+        }
+        #id1{
+            color: red;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .c1 a[href]{ color: green;}
+    </style>
+</head>
+<body>
+    <div class="c1">
+        <a href="">a1</a>
+    </div>
+    <p>빨간색</p>
+    <p> 파란색 </p>
+    <div style="color: blueviolet;">div이다</div>
+    <div>blue div이다</div>
+    <div id="id1">blue div이다</div>
+    <div>
+        <p>빨간색</p>
+    </div>
+    
+    <div class="yellow">blue div이다</div>
+    <div class="yellow">blue div이다</div>
+    <div class="yellow">blue div이다</div>
+
+    <button onclick="my_display()">버튼</button>
+
+    <script>
+        function my_display(x){
+            document.getElementById("id1").innerHTML = "ㅋㅋ";
+        }
+    </script>
+   
+</body>
+</html>
