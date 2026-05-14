@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-image: url(img/randomwalpaper.jpg);
+            margin: 10px;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            background-repeat: no-repeat;
+            }
+
+            #bg1 {background-size: auto;}
+
+            #bg2 {background-size: 200px;}
+
+            #bg3 {background-size: 50%;}
+
+            #bg4 {background-size: 100% 100%;}
+
+            #bg5 {background-size: contain;}
+
+            #bg6 {background-size: cover;}
+            
+    </style>
+</head>
+
+<body>
+    <h1>background-size는 직사각형 테스트 권장</h1>
+    <div id="bg1">background-size: auto</div>
+    <div id="bg2">background-size: 200px</div>
+    <div id="bg3">background-size: 50%</div>
+    <div id="bg4">background-size: 100% 100%</div>
+    <div id="bg5">background-size: contain</div>
+    <div id="bg6">background-size: cover</div>
+</body>
+
+</html>

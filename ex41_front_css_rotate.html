@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 800px; 
+            height: 200px; 
+            margin: auto; 
+            background-color: yellowgreen;
+        }
+        .origin{
+            width: 100px; 
+            height: 100px; 
+            margin: 50px;
+            border: 1px solid black;
+            float: left;
+        }
+        .origin div{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+        .origin img{
+            width: 100px;
+            height: 100px
+        }
+        #rotate1:hover{transform: rotate(40deg);}
+        #rotate2:hover{transform: rotate(-40deg);}
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="origin">
+            <div id="rotate1"><img src="https://imgnews.pstatic.net/image/009/2026/05/14/0005679997_001_20260514150009712.jpg?type=w860">
+            </div>
+        </div>
+        <div class="origin">
+            <div id="rotate2"><img src="https://imgnews.pstatic.net/image/009/2026/05/14/0005679997_001_20260514150009712.jpg?type=w860">
+            </div>
+        </div>
+       
+    </div>
+</body>
+</html>

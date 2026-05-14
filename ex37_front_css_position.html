@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-static,
+        .container-relative {
+            background-color: beige;
+        }
+
+        .test-static {
+            background-color: aquamarine;
+            margin: 5px;
+            padding: 5px;
+            position: static;
+        }
+
+        .test-relative {
+            background-color: aquamarine;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        #test-relative-3 {
+            left: 5px;
+            top: 3px;
+        }
+
+        .test-fixed {
+            background-color: blue;
+            position: fixed;
+            width: 200px;
+            height: 50px;
+            left: 0px;
+            top: 0px;
+        }
+
+        .container-absolute {
+            position: relative;
+            width: 200px; height: 200px;
+            background-image: url(https://server.wallpaperalchemy.com/storage/wallpapers/138/4k-high-resolution-alien-planet-wallpaper.jpg);
+            width: 1000px;
+            height: 1000px;
+         
+
+        }
+
+        .test-absolute {
+            background-color: bisque;
+            position: absolute;
+            left: 0px; top: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-static">
+        <div class="test-static">static content1</div>
+        <div class="test-static">static content2</div>
+        <div class="test-static">static content3</div>
+        <div class="test-static">static content4</div>
+
+    </div>
+    <div class="container-relative">
+        <div class="test-relative">relative content1</div>
+        <div class="test-relative">relative content2</div>
+        <div class="test-relative" id="test-relative-3">relative content4</div>
+        <div class="test-relative">relative content3</div>
+    </div>
+
+    <div class="container-fixed">
+        <div class="test-fixed">fixed-content</div>
+    </div>
+
+    <div class="container-absolute">
+        <div class="test-absolute">absolute-content</div>
+    </div>
+
+</body>
+
+</html>

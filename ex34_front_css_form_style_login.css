@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: aquamarine;
 }
@@ -7,6 +10,12 @@ body{
     width: 400px;
     margin: 50px auto;
     padding: 10px;
+}
+.login1 fieldset{
+    width: 100%;
+    min-width: 0;
+    margin: 0 0 12px;
+    padding: 12px;
 }
 .login1 legend{
     font-size: 16px;
@@ -19,6 +28,9 @@ body{
     display: flex;
     align-items: center;
 }
+.login1 ul{
+    padding: 0;
+}
 .login1 label{
     width: 100px;
     flex-shrink: 0;
@@ -27,7 +39,31 @@ body{
 .login1 input{
     flex-grow: 1;
     width: 150px;
+    min-width: 0;
+}
+.login1 select{
+    width: 120px;
+    min-width: 120px;
 }
 .login1 input[required]{
     border: 1px solid red;
+}
+.login1 input[readonly]{
+    border: none;
+}
+.login1 button{
+    border: 1px solid groove;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+    padding: 5px 30px;
+    color: darkblue;
+}
+.login1 #email{
+    flex: 1;
+    min-width: 0;
+}
+
+.login1 #domain{
+    width: 120px;
 }

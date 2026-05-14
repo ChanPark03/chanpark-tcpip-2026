@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 800px; 
+            height: 200px; 
+            margin: auto; 
+            background-color: yellowgreen;
+        }
+        .origin{
+            width: 100px; 
+            height: 100px; 
+            margin: 50px;
+            border: 1px solid black;
+            float: left;
+        }
+        .origin div{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+        #movex:hover{transform: scalex(2);}
+        #movey:hover{transform: scaley(1.5);}
+        #movexy:hover{transform: scale(5);}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="origin">
+            <div id="movex">item1</div>
+        </div>
+        <div class="origin">
+            <div id="movey">item2</div>
+        </div>
+        <div class="origin">
+            <div id="movexy">item3</div>
+        </div>
+    </div>
+</body>
+</html>
