@@ -10,7 +10,22 @@
             margin: 20px auto;
         }
         .prod-list{list-style: none;}
-        .prod-list li{float: left;}
+        .prod-list li{float: left; position: relative;}
+        .prod-list img{width: 200px; height: 150px}
+        .prod-list .caption{
+            position: absolute;
+            width: 200px;
+            height: 150px;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: 1s ease;
+
+        }
+        .prod-list li:hover .caption{
+            opacity: 1;
+            transform: translateY(-160px);
+        }
+        .caption h2, .caption p{color:azure; text-align: center;}
     </style>
 </head>
 <body>

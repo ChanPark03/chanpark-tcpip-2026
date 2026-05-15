@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my-header, .my-footer{
+            background-color: blue;
+            height: 100px; text-align: center;
+        }
+        .container{
+            background-color: greenyellow;
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+        }
+        .flex-item{
+            margin: 10px auto; 
+            padding: 10px;
+            width: 150px;
+            border-radius: 10px;
+            height: 100px;
+            background-color: rgb(36, 91, 139);
+        }
+        @media (max-width: 800px){
+            .container{
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="my-header">검색창</div>
+    <div class="container">
+        <div class="flex-item">컨텐츠 박스 1</div>
+        <div class="flex-item">컨텐츠 박스 2</div>
+        <div class="flex-item">컨텐츠 박스 3</div>
+        <div class="flex-item">컨텐츠 박스 4</div>
+    </div>
+    <div class="my-footer">회사 소개 글</div>
+</body>
+</html>
